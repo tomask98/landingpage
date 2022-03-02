@@ -1,0 +1,253 @@
+:root{
+    --gray:  hsl(144, 67%, 94%);
+    --green:hsl(144, 65%, 72%);
+    --dark-green: hsl(145, 100%, 14%);
+    --white-blue: #d9fbfc;
+
+}
+html {
+    scroll-behavior: smooth;
+    margin: 10px;
+  }
+  #section1 {
+  height: 300px;
+  margin-top: 5vh;
+  }
+#section2 {
+    height: 800px;
+   width: auto;
+  margin-bottom: 3vh;
+   
+  }
+  #section3 {
+    height:auto;
+    margin-top: 4vh;
+  }
+  #section4 {
+    height:600px;
+    margin-top: 4vh;
+    
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--white-blue);
+}
+
+.navbar{
+    overflow: hidden;
+    display: flex;
+  
+    top: 0;
+    height: 100px;
+    width: 100%;
+    margin: 0px;
+    
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white-blue);
+    border-bottom: 2px solid var(--gray);
+    
+}
+.logo_navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width: 100%;
+    max-width: 100px;
+    min-height: 50px;
+}
+.menu{
+    
+
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.menu ul li{
+    margin: 0 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: var(--dark-green);
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+  
+}
+.menu ul li :hover{
+    border-bottom: 1px solid var(--dark-green);
+    }
+
+.portada{
+    display: flex;
+    width: 100%;
+    background-image: url(assets/fatty-corgi-EpRAM95thHU-unsplash.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    margin-left: 10px;
+    
+
+
+    
+}
+.portada img{
+    
+    height: 5vh;
+    position: relative;
+    align-items: center;
+    margin: 70vh 100vh;
+}
+.main{
+   
+    width: auto;
+    
+    
+}
+.main h2{
+    margin-left: 3vh;
+}
+.about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+}
+.text{
+    
+    border: 1px solid black;
+    border-radius: 20px; 
+    width: auto;
+    height:auto;
+    margin: 20px 20px;
+    text-align: left;
+    
+    
+
+
+}
+.text p{
+    margin: 20px 20px;
+   
+}
+h2{
+    margin-left: 3vh;
+}
+.shop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;    
+}
+.container{
+    
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding: 0 ;
+}
+.article{
+    
+    border: 1px solid black;
+    border-radius: 20px;
+    margin-top: 10px;
+   
+    
+}
+.servicio{
+    display: flex;
+    flex-direction: column;
+
+}
+.serv1, .serv2 {
+    margin: 15px;
+    display: flex;
+    flex-direction:row ;
+    align-items: center;
+    padding: 10 15px;
+}
+.serv1 p, .serv2 p{
+    margin: 30px;
+}
+
+
+h3{
+    text-align: center;
+    }
+.img_shop {
+    height: 300px;
+    width: auto;
+   
+    border-radius: 20px 20px 0 0 ;
+    
+}
+.img_servicio{
+    height: 300px;
+    width: auto;
+    border-radius: 20px ;
+}
+.container2{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.socialmedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.socialmedia ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.socialmedia ul li{
+    margin: 10px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_socialmedia{
+    height: 150px;
+    width: auto;
+    border-radius: 20px ;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(assets/footer.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: black;
+    height: 300px;
+    width: 100%;
+    text-align: center;
+
+}
+footer h4{
+    align-content: center;
+}
