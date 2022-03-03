@@ -2,7 +2,7 @@
     --gray:  hsl(144, 67%, 94%);
     --green:hsl(144, 65%, 72%);
     --dark-green: hsl(145, 100%, 14%);
-    --white-blue: #d9fbfc;
+    --white-blue: hsl(182, 85%, 92%);
 
 }
 html {
@@ -33,10 +33,13 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
+@media only screen and (min-width: 1040px) {
 body{
     background-color: var(--white-blue);
 }
-
+.mobile{
+     display: none;
+ }
 .navbar{
     overflow: hidden;
     display: flex;
@@ -63,6 +66,7 @@ body{
     max-width: 100px;
     min-height: 50px;
 }
+
 .menu{
     
 
@@ -155,20 +159,20 @@ h2{
 }
 .container{
     
-    
+    width: 80%;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
-    margin-left: 60px;
-    margin-right: 60px;
-    padding: 0 ;
+   
+    padding: 10px ;
+    
 }
 .article{
     
     border: 1px solid black;
     border-radius: 20px;
-    margin-top: 10px;
+    margin: 10px;
    
     
 }
@@ -251,3 +255,68 @@ footer{
 footer h4{
     align-content: center;
 }
+
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: var(--white-blue);
+        
+    }
+    .navbar{
+        display: none;
+    }
+    .menu-button {
+        margin: 0 600px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items:center ;
+        width: 45px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 7px;
+        background: var(--white-blue);
+        cursor: pointer;
+      }
+      .menu-button span {
+        width: 30px;
+        height: 4px;
+        background: black;
+      }
+      .menu-toggle {
+        display: none;
+      }
+      .toggle {
+        display: none;
+        text-align: center;
+        background: var(--white-blue);
+        border: 1px solid black;
+        border-radius: 7px;
+        padding: 20px;
+        width: 150px;
+        margin: 10px 400px;
+      }
+      .toggle li {
+         list-style: none;
+         display: block;
+         padding: 10px 0;
+         color: #fafafa;
+      }
+      .toggle  a{
+        text-decoration: none;
+        color: var(--dark-green);
+        border-bottom: 1px solid transparent;
+        transition: 0.5s;
+      
+    }
+    .toggle ul li :hover{
+        border-bottom: 1px solid var(--dark-green);
+        }
+      
+      .menu-toggle:checked + .toggle {
+        display: block;
+     }
+    
+
+
+} 
