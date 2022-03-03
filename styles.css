@@ -344,21 +344,20 @@ footer h4{
       .menu-toggle:checked + .toggle {
         display: block;
      }
-     .img{
-         width: auto;
-     }
      .portada{
-        display: flex;
-    width: 100%;
-    background-image: url(assets/fatty-corgi-EpRAM95thHU-unsplash.jpg);
-    height: 70vh;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: contain;
-    margin: 0;
+         display: flex;
+         width: 100%;
+         background-image: url(assets/fatty-corgi-EpRAM95thHU-unsplash.jpg);
+         height: 70vh;
+         background-repeat: no-repeat;
+         background-position: top;
+         background-size: contain;
+         margin: 0;
          
-     }
-    
-
+        }
+        .main , .shop , .servicio, .Ubi{
+            display: none;
+        }
+      
 
 } 
