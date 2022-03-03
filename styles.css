@@ -258,15 +258,39 @@ footer h4{
 
 }
 @media only screen and (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body {
         background-color: var(--white-blue);
         
+    }
+    .mobile{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin: 0;
+      height: auto;
+        
+        
+    }
+    .logo_navbar{
+        margin: 0;
+    }
+    .logo{
+        margin: 0 10px;
+        height: 100px;
+        width: auto;
     }
     .navbar{
         display: none;
     }
     .menu-button {
-        margin: 0 600px ;
+        margin-left: 500px;
+        margin-top: -70px;
+        margin-bottom: 100px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -283,8 +307,12 @@ footer h4{
         height: 4px;
         background: black;
       }
+       label{
+          width: 100px;
+      } 
       .menu-toggle {
         display: none;
+        width: 600px;
       }
       .toggle {
         display: none;
@@ -294,7 +322,7 @@ footer h4{
         border-radius: 7px;
         padding: 20px;
         width: 150px;
-        margin: 10px 400px;
+        margin: 10px auto;
       }
       .toggle li {
          list-style: none;
@@ -315,6 +343,20 @@ footer h4{
       
       .menu-toggle:checked + .toggle {
         display: block;
+     }
+     .img{
+         width: auto;
+     }
+     .portada{
+        display: flex;
+    width: 100%;
+    background-image: url(assets/fatty-corgi-EpRAM95thHU-unsplash.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    margin: 0;
+         
      }
     
 
