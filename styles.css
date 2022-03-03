@@ -33,7 +33,7 @@ html {
     padding: 0;
     box-sizing: border-box;
 }
-@media only screen and (min-width: 1040px) {
+@media only screen and (min-width: 602px) {
 body{
     background-color: var(--white-blue);
 }
