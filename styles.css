@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Press+Start+2P&family=Roboto:wght@500&display=swap');
 :root{
     --gray:  hsl(144, 67%, 94%);
     --green:hsl(144, 65%, 72%);
     --dark-green: hsl(145, 100%, 14%);
     --white-blue: hsl(182, 85%, 92%);
-
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Press Start 2P', cursive;
+    font-family: 'Roboto', sans-serif;
 }
 html {
+   
     scroll-behavior: smooth;
     margin: 10px;
   }
@@ -29,12 +33,17 @@ html {
     
   }
   *{
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+h2 , h3, h4 ,p {
+    font-family:  'roboto', sans-serif; 
+}
 @media only screen and (min-width: 602px) {
 body{
+    display: block;
     background-color: var(--white-blue);
 }
 .mobile{
@@ -273,7 +282,10 @@ footer h4{
       flex-wrap: wrap;
       margin: 0;
       height: auto;
-        
+      background-image: url(assets/waves.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-y: 30px ;
         
     }
     .logo_navbar{
@@ -286,11 +298,13 @@ footer h4{
     }
     .navbar{
         display: none;
+        
+        
     }
     .menu-button {
-        margin-left: 500px;
         margin-top: -70px;
-        margin-bottom: 100px;
+       margin-left: 500px;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -317,18 +331,19 @@ footer h4{
       .toggle {
         display: none;
         text-align: center;
-        background: var(--white-blue);
+        background: var(--gray);
         border: 1px solid black;
         border-radius: 7px;
         padding: 20px;
         width: 150px;
         margin: 10px auto;
+        
       }
       .toggle li {
          list-style: none;
          display: block;
          padding: 10px 0;
-         color: #fafafa;
+         color: var(--white-blue)
       }
       .toggle  a{
         text-decoration: none;
@@ -347,17 +362,152 @@ footer h4{
      .portada{
          display: flex;
          width: 100%;
-         background-image: url(assets/fatty-corgi-EpRAM95thHU-unsplash.jpg);
-         height: 70vh;
+         background-image: url(assets/portada.jpg);
+         height: 200px;
          background-repeat: no-repeat;
          background-position: top;
          background-size: contain;
          margin: 0;
          
         }
-        .main , .shop , .servicio, .Ubi{
-            display: none;
+        .main{
+
+            display: flex;
+            flex-direction: column;
+
         }
-      
+        .main h2{
+            margin-left: 2vh;
+        }
+        .about{
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 2vh;
+            height: 300px;
+            width: 90%;
+
+        }
+        .shop{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            height: auto;
+            width: 90%;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          
+        }
+        .article{
+            height: 250px;
+            width: 300px;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 10px;
+            
+
+        }
+        .article img{
+            border-radius: 20px 20px 0 0  ;
+            height: 200px;
+            width: 298px;
+        }
+        .article h3{
+            text-align: center;
+           
+        }
+        .servicio{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+        }
+        .serv1, .serv2{
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            width: 100%;
+            margin: 10px;
+        
+        }
+        .serv1 p , .serv2 p{
+            margin: 10px;
+            width: 100%;
+            text-align: left;
+        }
+        .img_servicio{
+            margin: 0 10px;
+            border-radius: 20px;
+            height: 200px;
+        }
+        .Ubi{
+            display: flex;
+            flex-direction: column;
+            height: 400px;
+        }
+        .mapa img{
+            margin: 10px;
+            height: 300px;
+            width: 90%;
+        }
+        .container2{
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100vh;
+        }
+        .mapa{
+            display: flex;
+            justify-content: center;
+        }
+        .socialmedia{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 200px;
+            
+        }
+        .socialmedia ul{
+            margin-top: 10px;
+            height: 300px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+        }
+        .socialmedia ul li{
+            margin: 10px 25px;
+            padding: 10px;
+            width: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .socialmedia h2{
+            text-align: center;
+            height:100px ;
+        }
+        .img_socialmedia{
+            height: 100px;
+            width: 100px;
+        }
+
+        footer{
+            
+            display: flex;
+            height: 200px;
+            width: auto;
+            background-image: url(assets/waves.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            background-position-y: -130px;
+        }
+       
 
 } 
