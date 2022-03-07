@@ -5,6 +5,7 @@
     font-family: 'Press Start 2P', cursive;
     font-family: 'Roboto', sans-serif;
     --green:hsl(144, 65%, 72%);
+    --white-blue: hsl(182, 85%, 92%);
 }
 
 *{
@@ -63,7 +64,7 @@ html, body {
     }
 .logo{
 display: flex;
-margin: 20px;
+
 width: 100%;
 
 }
@@ -128,10 +129,17 @@ button:hover{
     background-color: var(--green);
 }
 
- @media only screen and (max-width: 600px) {
+ @media only screen and (max-width: 600px ) {
+    html{
+    background-color: var(--white-blue);
+    }
     body{
-        background-image: url(/assets/waves.svg);
-        background-repeat: no-repeat;
+        display: block;
+        background-image: url(/assets/stacked-waves.svg);
+        background-size: cover;
+        
+        height: 900px;
+   
 
     }
     .logo{
@@ -142,7 +150,7 @@ button:hover{
     }
     main{
         
-        height: 100vh;
+        height: 700px;
         width: 100vw;
         display: flex;
         justify-content: center;
@@ -153,12 +161,17 @@ button:hover{
         
         display: flex;
         flex-direction: column-reverse;
-        height: 650px;
+        height: 600px;
         width: auto;
         max-width: 400px;
         border: none;
      
     } 
+    .img-log{
+        height: 150px;
+        width: 150px;
+
+    }
     
 
 }
