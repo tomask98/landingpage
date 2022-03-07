@@ -153,8 +153,9 @@ button:hover{
         
         display: flex;
         flex-direction: column-reverse;
-        height: 700px;
-        width: 400px;
+        height: 650px;
+        width: auto;
+        max-width: 400px;
         border: none;
      
     } 
