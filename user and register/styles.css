@@ -144,7 +144,7 @@ button:hover{
     }
     .logo{
         display: flex;
-        width: auto;
+        width: auto; 
         height: 20px;
 
     }
